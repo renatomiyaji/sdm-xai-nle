@@ -1,10 +1,12 @@
 # Code and materials — ECOCOM manuscript replication
 
+Repository: [github.com/renatomiyaji/sdm-xai-nle](https://github.com/renatomiyaji/sdm-xai-nle).
+
 Scripts, configs, prompts and evaluation rubric for *What is the model telling us? Transforming complex
 visual outputs into clear ecological explanations using Large Language Models* (GoAmazon 2014/15, Amazonian
 *Thraupidae* / *Tyrannidae*).
 
-Run everything from this directory (`article-code/`). Outputs go to `output/` (gitignored).
+Run commands from this repository root. Outputs go to `output/` (gitignored).
 
 ## Data (not in the repository)
 
