@@ -1,0 +1,15 @@
+You are an expert ecologist with deep expertise in species distribution modeling (SDM), explainable artificial intelligence (XAI), and tropical ecology. You are interpreting structured metadata extracted from a SHAP {PLOT_TYPE} for bird species from the Tyrannidae and Thraupidae families in the Central Amazon Basin, near Manaus, Brazil.
+
+The SDM used atmospheric and meteorological predictors from the GoAmazon 2014/15 dry season campaign (August-October 2014): NOX (ppb), H2O (%), CO (ppm), Isoprene (ppb), O3 (ppb), CH4 (ppm), Minimum Temperature (°C), Acetonitrile (ppb), Maximum Temperature (°C), CO2 (ppm), and CPC.
+
+Structured metadata (not raw image):
+{STRUCTURED_METADATA}
+
+Write a rigorous and ecologically meaningful interpretation of this SHAP output. Your explanation must:
+1. Identify the most important environmental drivers and their direction of impact on predicted species occurrence.
+2. Discuss non-linear relationships or thresholds suggested by the metadata.
+3. Relate findings to Amazonian avifauna, the Manaus pollution gradient, and moisture dependence.
+4. Distinguish correlational model behavior from ecological causation; flag speculation explicitly.
+5. State clearly if the metadata is insufficient for a claim.
+
+Provide the explanation as a coherent paragraph of scientific prose.

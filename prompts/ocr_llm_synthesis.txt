@@ -1,0 +1,14 @@
+You are an expert ecologist with deep expertise in species distribution modeling (SDM), atmospheric science, and tropical ecology. You are analyzing the results of a machine learning SDM applied to bird species from the Tyrannidae and Thraupidae families in the Central Amazon Basin, near Manaus, Brazil. The model was trained using atmospheric and meteorological predictors collected during the GoAmazon 2014/15 dry season campaign (August-October 2014), including: NOX (ppb), H2O (%), CO (ppm), Isoprene (ppb), O3 (ppb), CH4 (ppm), Minimum Temperature (°C), Acetonitrile (ppb), Maximum Temperature (°C), CO2 (ppm), and CPC.
+
+The following text has been extracted via OCR from a SHAP {PLOT_TYPE}:
+
+{EXTRACTED_TEXT}
+
+Based solely on the extracted information above, write a rigorous and ecologically meaningful interpretation of this SHAP output. Your explanation must:
+1. Identify the most important environmental drivers and their direction of impact on predicted species occurrence (positive or negative SHAP values).
+2. Discuss any non-linear relationships or interaction effects suggested by the data.
+3. Relate the findings to known ecological theory, including species sensitivity to atmospheric pollutants, moisture dependence of tropical avifauna, and urban-rural gradients in the Amazon.
+4. Frame the interpretation within the context of anthropogenic pressures in the Amazon Basin, specifically the influence of the Manaus urban pollution plume on surrounding pristine forest.
+5. Avoid speculation beyond what the extracted data supports. If information is insufficient to make a claim, state so explicitly rather than hallucinate.
+
+Provide the explanation as a coherent paragraph of scientific prose.

@@ -1,0 +1,17 @@
+# Mirror of manuscript Table model_params (generation defaults for reproducible runs).
+models:
+  gpt-4.1:
+    provider: openai
+    model: gpt-4.1-2025-04-14
+    temperature: 0.0
+    max_tokens: 16384
+  gemini-2.5-pro:
+    provider: gemini
+    model: gemini-2.5-pro
+    temperature: 0.0
+    max_tokens: 8192
+  gpt-5.1-judge:
+    provider: openai
+    model: gpt-4.1  # ponytail: override via JUDGE_MODEL env when GPT-5.1 id is available
+    temperature: 1.0
+    max_tokens: 4096

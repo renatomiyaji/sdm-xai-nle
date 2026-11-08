@@ -1,0 +1,82 @@
+plot_labels:
+  bar: SHAP bar summary plot
+  beeswarm: beeswarm summary plot
+  waterfall: waterfall plot
+  dependence: partial dependence plot (NOX coloured by O3)
+
+plot_files:
+  bar: shap_avg_{family}.png
+  beeswarm: shap_beeswarm_{family}.png
+  waterfall: shap_waterfall_{family}.png
+  dependence: shap_dependence_{family}.png
+
+families: [thraupidae, tyrannidae]
+
+experiments:
+  - id: baseline_gpt41
+    pipeline: baseline
+    approach: LLM (text only)
+    technique: GPT-4.1
+    generator: gpt-4.1
+    plots: [bar, beeswarm, waterfall, dependence]
+
+  - id: baseline_gemini
+    pipeline: baseline
+    approach: LLM (text only)
+    technique: Gemini 2.5 Pro
+    generator: gemini-2.5-pro
+    plots: [bar, beeswarm, waterfall, dependence]
+
+  - id: ocr_unstructured_gpt41
+    pipeline: ocr
+    approach: OCR + LLM
+    technique: Unstructured
+    ocr: unstructured
+    generator: gpt-4.1
+    plots: [waterfall]
+
+  - id: ocr_docling_gemini
+    pipeline: ocr
+    approach: OCR + LLM
+    technique: Docling
+    ocr: docling
+    generator: gemini-2.5-pro
+    plots: [waterfall]
+
+  - id: direct_gpt41
+    pipeline: direct
+    approach: Direct VLM
+    technique: GPT-4.1
+    generator: gpt-4.1
+    plots: [bar, beeswarm, waterfall, dependence]
+
+  - id: direct_gemini
+    pipeline: direct
+    approach: Direct VLM
+    technique: Gemini 2.5 Pro
+    generator: gemini-2.5-pro
+    plots: [bar, beeswarm, waterfall, dependence]
+
+  - id: hybrid_matched_gpt41
+    pipeline: hybrid
+    approach: VLM extractor + same-model synthesizer
+    technique: GPT-4.1
+    extractor: gpt-4.1
+    generator: gpt-4.1
+    plots: [bar, beeswarm, waterfall, dependence]
+
+  - id: hybrid_matched_gemini
+    pipeline: hybrid
+    approach: VLM extractor + same-model synthesizer
+    technique: Gemini 2.5 Pro
+    extractor: gemini-2.5-pro
+    generator: gemini-2.5-pro
+    plots: [bar, beeswarm, waterfall, dependence]
+
+  - id: hybrid_gpt41_gemini_gen
+    pipeline: hybrid
+    approach: VLM extractor + Gemini synthesizer
+    technique: GPT-4.1 (Gemini Gen.)
+    extractor: gpt-4.1
+    generator: gemini-2.5-pro
+    plots: [bar, beeswarm, waterfall, dependence]

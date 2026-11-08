@@ -1,0 +1,5 @@
+-r requirements.txt
+openai>=2.0.0
+google-genai>=1.0.0
+PyYAML>=6.0
+unstructured[pdf,image]>=0.16.0
